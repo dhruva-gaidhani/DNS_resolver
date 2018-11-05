@@ -1,0 +1,45 @@
+D:\Assignment 2>python my_dns.py www.cnn.com A
+
+Active root detected:  202.12.27.33
+
+QUESTION SECTION:
+www.cnn.com     IN   A
+
+ANSWER SECTION:
+www.cnn.com. 300 IN CNAME turner-tls.map.fastly.net.
+turner-tls.map.fastly.net. 30 IN A 151.101.209.67
+
+Query time:  587
+WHEN:  2018-09-26 16:19:04.405401
+
+MSG SIZE rcvd:  32
+---------------------------------------------------
+D:\Assignment 2>python my_dns.py www.cnn.com MX
+
+Active root detected:  202.12.27.33
+
+QUESTION SECTION:
+www.cnn.com     IN   MX
+
+ANSWER SECTION:
+www.cnn.com. 300 IN CNAME turner-tls.map.fastly.net.
+
+Query time:  505
+WHEN:  2018-09-26 16:20:39.534443
+
+MSG SIZE rcvd:  32
+----------------------------------------------------
+D:\Assignment 2>python my_dns.py www.cnn.com NS
+
+Active root detected:  202.12.27.33
+
+QUESTION SECTION:
+www.cnn.com     IN   NS
+
+ANSWER SECTION:
+www.cnn.com. 300 IN CNAME turner-tls.map.fastly.net.
+
+Query time:  642
+WHEN:  2018-09-26 16:22:12.205034
+
+MSG SIZE rcvd:  32
